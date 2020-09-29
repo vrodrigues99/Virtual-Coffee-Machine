@@ -154,9 +154,13 @@ namespace VirtualCoffeMachine
             Application.Exit();
         }
 
+        //METODO PARA ZERAR SALDO
         private void ZerarSaldo()
         {
+            //ZERA SALDO ATUAL APOS COMPRA
             SaldoTotal = 0;
+
+            //ATUALIZA LABEL DE SALDO
             LblSaldo.Text = "Saldo: " + SaldoTotal.ToString("C");
         }
     }
