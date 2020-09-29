@@ -39,7 +39,7 @@
             this.btn5centavos = new System.Windows.Forms.Button();
             this.btn1centavo = new System.Windows.Forms.Button();
             this.btnCappuccino = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMocha = new System.Windows.Forms.Button();
             this.btnCafeLeite = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -174,20 +174,20 @@
             this.btnCappuccino.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCappuccino.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnMocha
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(187, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 150);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Mocha: R$4,00";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMocha.BackColor = System.Drawing.SystemColors.Control;
+            this.btnMocha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMocha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMocha.Image = ((System.Drawing.Image)(resources.GetObject("btnMocha.Image")));
+            this.btnMocha.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMocha.Location = new System.Drawing.Point(187, 226);
+            this.btnMocha.Name = "btnMocha";
+            this.btnMocha.Size = new System.Drawing.Size(150, 150);
+            this.btnMocha.TabIndex = 15;
+            this.btnMocha.Text = "Mocha: R$4,00";
+            this.btnMocha.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMocha.UseVisualStyleBackColor = false;
             // 
             // btnCafeLeite
             // 
@@ -210,7 +210,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.btnCafeLeite);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnMocha);
             this.Controls.Add(this.btnCappuccino);
             this.Controls.Add(this.btn1centavo);
             this.Controls.Add(this.btn5centavos);
@@ -241,7 +241,7 @@
         private System.Windows.Forms.Button btn5centavos;
         private System.Windows.Forms.Button btn1centavo;
         private System.Windows.Forms.Button btnCappuccino;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMocha;
         private System.Windows.Forms.Button btnCafeLeite;
     }
 }

@@ -21,7 +21,7 @@ namespace VirtualCoffeMachine
             //INICIALIZA COMPONENTES DO MENU
             InitializeComponent();
 
-            LblSaldo.Text = "Saldo: R$" + SaldoTotal;
+            LblSaldo.Text = "Saldo: " + SaldoTotal.ToString("C");
 
             //DEFICINICAO DE ACTION PARA BOTOES MOEDA
             btn1centavo.Click += btnsMoeda_Click;
@@ -70,13 +70,13 @@ namespace VirtualCoffeMachine
                 case "btn5centavos": AdicionarSaldo(0.05); break;
 
                 //MOEDA 10 CENTAVOS
-                case "btn10centavos": AdicionarSaldo(0.10); break;
+                case "btn10centavos": AdicionarSaldo(0.1); break;
 
                 //MOEDA 25 CENTAVOS
                 case "btn25centavos": AdicionarSaldo(0.25); break;
 
                 //MOEDA 50 CENTAVOS
-                case "btn50centavos": AdicionarSaldo(0.50); break;
+                case "btn50centavos": AdicionarSaldo(Math.Round(0.5, 2)); break;
 
                 //MOEDA 1 REAL
                 case "btn1real": AdicionarSaldo(1); break;
@@ -111,9 +111,9 @@ namespace VirtualCoffeMachine
             if(preco <= SaldoTotal)
             {
                 //CASO HAJA TROCO
-                if (preco != SaldoTotal)
+                if (!(preco == Math.Round(SaldoTotal, 2)))
                 {
-                    message = MessageBox.Show("Compra Confirmada! Retire o Troco: R$" + (SaldoTotal - preco), "Compra Confirmada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    message = MessageBox.Show("Compra Confirmada! Retire o Troco: " + (SaldoTotal - preco).ToString("C"), "Compra Confirmada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZerarSaldo();
                 }
                 //CASO NAO HAJA TROCO
@@ -127,7 +127,7 @@ namespace VirtualCoffeMachine
             //CASO NAO HAJA SALDO SUFICIENTE
             else
             {
-                message = MessageBox.Show("Seu saldo não é suficiente. Favor inserir R$" + Math.Abs(SaldoTotal-preco), "Compra Rejeitada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                message = MessageBox.Show("Seu saldo não é suficiente. Favor inserir " + Math.Abs(SaldoTotal-preco).ToString("C"), "Compra Rejeitada", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -143,20 +143,21 @@ namespace VirtualCoffeMachine
 
             //ADICIONA MOEDA AO VALOR TOTAL
             SaldoTotal += valor;
-            LblSaldo.Text = "Saldo: R$" + SaldoTotal;
-        }
-
-        //METODO PARA ZERAR SALDO
-        private void ZerarSaldo()
-        {
-            SaldoTotal = 0;
+            Math.Round(SaldoTotal, 2);
+            LblSaldo.Text = "Saldo: " + SaldoTotal.ToString("C");
         }
 
         //METODO PARA O BOTAO CANCELAR
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             message = MessageBox.Show("Retire seu dinheiro!", "Compra Cancelada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            ZerarSaldo();
+            Application.Exit();
+        }
+
+        private void ZerarSaldo()
+        {
+            SaldoTotal = 0;
+            LblSaldo.Text = "Saldo: " + SaldoTotal.ToString("C");
         }
     }
 }
