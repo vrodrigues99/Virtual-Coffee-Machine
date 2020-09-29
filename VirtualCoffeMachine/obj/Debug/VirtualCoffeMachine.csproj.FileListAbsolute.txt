@@ -1,0 +1,10 @@
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.csprojAssemblyReference.cache
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.Menu.resources
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.Properties.Resources.resources
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.csproj.GenerateResource.cache
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.csproj.CoreCompileInputs.cache
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\bin\Debug\VirtualCoffeMachine.exe.config
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\bin\Debug\VirtualCoffeMachine.exe
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\bin\Debug\VirtualCoffeMachine.pdb
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.exe
+C:\Users\victo\source\repos\vrodrigues99\VirtualCoffeeMachine\VirtualCoffeMachine\obj\Debug\VirtualCoffeMachine.pdb
